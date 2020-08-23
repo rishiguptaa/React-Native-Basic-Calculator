@@ -44,8 +44,8 @@ export default class App extends React.Component{
     return (
       <View style={styles.container}>
         <Text style={styles.heading}>Basic Calculator</Text>
-        <TextInput style={styles.input} placeholder="  write 1st number" value={this.state.first} onChangeText={text => this.setState({first:text})}/>
-        <TextInput style={styles.input} placeholder="  write 2nd number" value={this.state.second} onChangeText={text => this.setState({second:text})}/>
+        <TextInput style={styles.input} placeholder="  Enter 1st number" value={this.state.first} onChangeText={text => this.setState({first:text})}/>
+        <TextInput style={styles.input} placeholder="  Enter 2nd number" value={this.state.second} onChangeText={text => this.setState({second:text})}/>
         <Button style={styles.buttons} color = "#841550" title="+" onPress = {this.onAddition.bind(this)}/>
         <Button style={styles.buttons} color = "#841550" title="-" onPress = {this.onSubtraction.bind(this)}/>
         <Button style={styles.buttons} color = "#841550" title="*" onPress = {this.onMultiplication.bind(this)}/>
