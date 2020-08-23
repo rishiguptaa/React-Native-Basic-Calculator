@@ -46,10 +46,10 @@ export default class App extends React.Component{
         <Text style={styles.heading}>Basic Calculator</Text>
         <TextInput style={styles.input} placeholder="  Enter 1st number" value={this.state.first} onChangeText={text => this.setState({first:text})}/>
         <TextInput style={styles.input} placeholder="  Enter 2nd number" value={this.state.second} onChangeText={text => this.setState({second:text})}/>
-        <Button style={styles.buttons} color = "#841550" title="+" onPress = {this.onAddition.bind(this)}/>
-        <Button style={styles.buttons} color = "#841550" title="-" onPress = {this.onSubtraction.bind(this)}/>
-        <Button style={styles.buttons} color = "#841550" title="*" onPress = {this.onMultiplication.bind(this)}/>
-        <Button style={styles.buttons} color = "#841550" title="/" onPress = {this.onDivision.bind(this)}/>
+        <Button color = "#841550" title="+" onPress = {this.onAddition.bind(this)}/>
+        <Button color = "#841550" title="-" onPress = {this.onSubtraction.bind(this)}/>
+        <Button color = "#841550" title="*" onPress = {this.onMultiplication.bind(this)}/>
+        <Button color = "#841550" title="/" onPress = {this.onDivision.bind(this)}/>
         <Text>Ans is {this.state.total}</Text>
       </View>
     );
@@ -70,6 +70,5 @@ const styles = StyleSheet.create({
     backgroundColor : 'grey',
     margin : 2,
     borderColor : 'black',
-    //borderRadius : 10
   }
 });
